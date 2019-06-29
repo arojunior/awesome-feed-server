@@ -1,0 +1,4 @@
+type Feed {
+  cursor: String
+  activity: [Activity]
+}

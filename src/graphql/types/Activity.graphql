@@ -1,0 +1,15 @@
+type Activity {
+  login: String
+  name: String
+  avatarUrl: String
+  nameWithOwner: String
+  createdAt: String
+  url: String
+  description: String
+  stargazers: Int
+  type: String
+  bodyHTML: String
+  repository: Repository
+  issue: Issue
+  languages: [Language]
+}

@@ -1,0 +1,4 @@
+type Issue {
+  number: Int
+  title: String
+}

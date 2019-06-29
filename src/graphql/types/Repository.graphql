@@ -1,0 +1,5 @@
+type Repository {
+  name: String
+  nameWithOwner: String
+  url: String
+}
