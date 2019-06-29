@@ -53,7 +53,7 @@
     "build": "babel -d ./build ./src --copy-files",
     "prebuild": "rimraf build/*",
     "start": "NODE_ENV=production node ./build/index.js",
-    "deploy": "now ./build --token=$NOW_TOKEN --public",
+    "deploy": "now ./build --token=$NOW_TOKEN --public --env GITHUB_TOKEN=$GITHUB_TOKEN",
     "prestart": "yarn build",
     "dev": "nodemon ./src/index.js --exec babel-node",
     "test": "jest --verbose=false",
