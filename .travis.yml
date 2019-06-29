@@ -5,11 +5,7 @@ script:
   - yarn build
 deploy:
   provider: script
-  script: 
-    - cp package.json build
-    - cp yarn.lock build
-    - cp now.json build
-    - yarn deploy
+  script: cp package.json build && cp yarn.lock build && cp now.json build && yarn deploy
   skip_cleanup: true
   on:
     branch: master
