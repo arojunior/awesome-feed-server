@@ -38,3 +38,5 @@ build
 
 # Docker
 docker/data
+
+.env
