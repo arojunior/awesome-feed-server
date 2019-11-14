@@ -15,6 +15,8 @@ const apolloServer = new ApolloServer({
   resolvers,
   context: {},
   tracing: true,
+  playground: true,
+  introspection: true,
 });
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = `0`;
