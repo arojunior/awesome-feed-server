@@ -1,8 +1,8 @@
 {
-  "version": 2,
+  "version": 1,
   "name": "awesome-feed-server",
   "builds": [
-    { "src": "*/index.js", "use": "@now/node-server" }
+    { "src": "index.js", "use": "@now/node-server" }
   ],
   "routes": [
     { "src": "/.*", "dest": "index.js" }
