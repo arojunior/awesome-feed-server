@@ -23,6 +23,7 @@
     "graphql-playground-middleware-express": "^1.7.2",
     "graphql-tools": "^4.0.5",
     "merge-graphql-schemas": "^1.5.3",
+    "now": "^16.5.2",
     "ramda": "^0.26.1"
   },
   "devDependencies": {
@@ -43,7 +44,6 @@
     "jest": "^24.8.0",
     "jest-cli": "^24.8.0",
     "nodemon": "^1.18.3",
-    "now": "^16.5.2",
     "prettier": "^1.14.0",
     "prettier-eslint": "^9.0.0",
     "rimraf": "^2.6.2",
