@@ -7,10 +7,11 @@ type Activity {
   url: String
   description: String
   stargazers: Int
+  number: Int
+  title: String
   type: String
   bodyHTML: String
   repository: Repository
   issue: Issue
   languages: [Language]
-  commits: [Commit]
 }

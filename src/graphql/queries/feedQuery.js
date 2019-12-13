@@ -43,6 +43,7 @@ const getTimelineQuery = ({ username, cursor = null }) => `query {
               url
             }
             bodyHTML
+            title
             url
             number
             createdAt
