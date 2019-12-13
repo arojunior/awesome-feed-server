@@ -12,4 +12,5 @@ type Activity {
   repository: Repository
   issue: Issue
   languages: [Language]
+  commits: [Commit]
 }
