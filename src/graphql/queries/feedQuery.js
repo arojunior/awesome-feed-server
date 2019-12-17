@@ -82,11 +82,11 @@ const getTimelineQuery = ({ username, cursor = null }) => `query {
   }
 }`;
 
-export default ({ username }) => {
+export default ({ username, cursor }) => {
   return axios({
     method: `POST`,
     url: GITHUB_GRAPHQL,
-    data: { query: getTimelineQuery({ username }) },
+    data: { query: getTimelineQuery({ username, cursor }) },
     headers: {
       authorization: `Bearer ${GITHUB_TOKEN}`,
     },

@@ -1,4 +1,4 @@
 type Query {
-  getFeed(username: String!): Feed
+  getFeed(username: String!, cursor: String): Feed
   getProfile(username: String!): Profile
 }
