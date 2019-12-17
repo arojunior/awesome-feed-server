@@ -2,16 +2,16 @@ import { last } from 'ramda';
 import feedQuery from '../queries/feedQuery';
 import transformDataForFeed from '../../services/feedActions';
 
-const getFeed = (_, { username }) => {
-  return feedQuery({ username })
+const getFeed = (_, { username, cursor }) => {
+  return feedQuery({ username, cursor })
     .then(({ data: { data } }) => {
-      const { cursor } = last(data.user.following.edges);
+      const { cursor: lastCursor } = last(data.user.following.edges);
       return {
-        cursor,
+        cursor: lastCursor,
         activity: transformDataForFeed(data),
       };
     })
-    .catch(console.log);
+    .catch(e => console.log(e));
 };
 
 export default {
