@@ -4,8 +4,9 @@ import { GITHUB_GRAPHQL, GITHUB_TOKEN } from '../../constants';
 const getTimelineQuery = ({ username, cursor = null }) => `query {
   user(login: "${username}") {
     following(last: 10, after: ${cursor}) {
-      edges {
-        cursor
+      pageInfo {
+        endCursor
+        hasNextPage
       }
       nodes {
         login
