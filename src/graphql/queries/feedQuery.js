@@ -3,7 +3,7 @@ import { GITHUB_GRAPHQL, GITHUB_TOKEN } from '../../constants';
 
 const getTimelineQuery = ({ username, cursor = null }) => `query {
   user(login: "${username}") {
-    following(last: 10, after: ${cursor}) {
+    following(first: 10, after: ${cursor}) {
       pageInfo {
         endCursor
         hasNextPage
